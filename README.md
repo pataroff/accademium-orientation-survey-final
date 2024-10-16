@@ -1,33 +1,38 @@
 # Accademium Orientation Survey Prototype
 
-- 👉🏻 [Live Preview](https://accademium-orientation-survey.vercel.app/)
-- 🎥 [Video Walkthrough - Kaltura](https://video.hanze.nl/mediashare/69b65d97f2070fce/media/Video_Walkthrough_Ivan+Patarov_414334/0_86eqxhg2)
-- 📺 [Video Walkthrough - YouTube](https://www.youtube.com/watch?v=zMLe1_y9GXQ)
+- 👉🏻 [Live Preview](https://accademium-orientation-survey-final.vercel.app/)
+- 🎥 [Video Walkthrough - Kaltura](https://video.hanze.nl/mediashare/f4f20c2fc590902b/media/Video_Walkthrough_Ivan_Patarov_414334/0_v85jexzk)
+- 📺 [Video Walkthrough - YouTube](https://www.youtube.com/watch?v=YJXvXG9lRYE)
 
 ## Overview
 
-This document outlines the final version of the prototype for "Accademium", specifically focusing on the Orientation Survey component. This prototype represents the next step in the design process, evolving from a high-fidelity click-through prototype created in Adobe XD to a fully interactive application developed with React and TypeScript.
+This document outlines the final version of the prototype for "Accademium", specifically focusing on the Orientation Survey component. This prototype represents a significant evolution from the initial high-fidelity click-through designs created in Adobe XD and Figma, where survey results were predetermined. The current version captures, stores, and utilizes user responses in real-time to generate personalized recommendations for study fields, programs, countries, cities, and universities.
 
 ## Purpose
 
-The primary aim of this prototype is to demonstrate the complex type of interactivity within the Accademium platform. It showcases how user responses are handled, stored, and used to provide personalized recommendations for study fields.
+The primary aim of this prototype is to demonstrate the complex type of interactivity within the Accademium platform. It showcases how user responses are handled, stored, and used to provide tailored recommendations based on individual preferences, strengths, and interests.
 
 ## Functionality
 
 #### 1. User Interaction and Local State Management:
 
 - Users interact with an orientation survey designed to capture their preferences, strengths, and interests.
-- As users progress through the survey, their responses are stored in the local state of the application.
+- As users progress through the survey, their responses are stored in the local state of the application in real-time, ensuring accuracy and responsiveness. 
 
 #### 2. Integration with OpenAI API:
 
 - Upon completing the survey, the local state (containing the user's responses) is sent to the OpenAI API.
-- The AI model processes the responses and generates personalized recommendations for study fields based on the provided answers.
+- The AI model processes the responses and generates personalized recommendations for study fields, programs, countries, cities, and universities.
 
-#### 3. Gamification and User Control:
+#### 3. Enhanced User Experience:
 
-- After receiving initial recommendations, users can refine their results using the "Randomize" button.
-- The "Randomize" button, represented by a dice icon, provides an additional set of three recommendations aligned with the user's survey responses.
+- A back button has been added to allow users to revisit previous questions, improving flexibility and reducing unnecessary API calls.
+- Users are provided with immediate updates and feedback based on their inputs, enhancing the overall user experience.
+
+#### 4. Dashboard Navigation:
+
+- A new dashboard feature allows users to switch to an overview of their personalized recommendations at any point during the survey.
+- Users can review and navigate their journey flexibly, without being restricted to a linear process.
 
 ## Features
 
@@ -39,7 +44,7 @@ The primary aim of this prototype is to demonstrate the complex type of interact
 #### 2. Real-Time Data Handling
 
 - Captures and manages user responses in real-time, maintaining data accuracy and security throughout the survey interaction.
-- Enables immediate updates and feedback based on user inputs, enhancing responsiveness and user satisfaction.
+- Allows users to review and adjust their answers before final submission, fostering thoughtful responses.
 
 #### 3. AI-Driven Recommendations
 
@@ -48,17 +53,21 @@ The primary aim of this prototype is to demonstrate the complex type of interact
 
 #### 4. Gamification with User Control
 
-- Introduces gamified elements such as the "Randomize" button, represented by a dice icon, at the end of the survey.
-- Allows users to explore alternative study field recommendations aligned with their interests, enhancing engagement and satisfaction.
-- Enhances user control by providing options to refine recommendations, promoting a personalized and enjoyable experience.
+- Introduces a prominent progress bar as a form of extrinsic motivation, encouraging users to continue through the process.
+- Incorporates a retry button with a confirmation prompt, preventing accidental restarts of the survey.
+- The "Randomize" feature has been replaced with the dashboard button for more accurate and user-aligned recommendations.
+
+#### 5. Upcoming Features
+
+- An AI chatbot button is under development to provide real-time assistance during the survey.
 
 ## Installation
 
-You can access the prototype directly from [this link](https://accademium-orientation-survey.vercel.app/).
+You can access the prototype directly from [this link](https://accademium-orientation-survey-final.vercel.app/).
 
 Alternatively, you can run the prototype locally:
 
-1. Navigate to `accademium-orientation-survey` folder.
+1. Navigate to the `accademium-orientation-survey` folder.
 2. Open a terminal (e.g., Git Bash) and ensure you are inside the `accademium-orientation-survey` folder.
 3. Run `npm install` to install the necessary dependencies.
 4. After the installation is complete, run the command `npm run dev` in the terminal.
@@ -66,7 +75,7 @@ Alternatively, you can run the prototype locally:
 
 ## Usage
 
-The application utilizes the OpenAI API, and each API call costs approximately **~$0.01**. A typical session generally totals around **~$0.02** due to making two separate calls - one for the initial study field recommendations and another for the randomized study field recommendations.
+The application utilizes the OpenAI API, and each API call costs approximately **~$0.01**. A typical session generally totals around **~$0.02** due to making two separate calls - one for the initial study field recommendations and another for the dashboard navigation.
 
 The application currently operates within a budget of approximately **$5 dollars**, so please use it sparingly.
 
