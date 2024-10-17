@@ -1,4 +1,4 @@
-# Accademium Orientation Survey Prototype
+# Accademium Orientation Survey Final Prototype
 
 - 👉🏻 [Live Preview](https://accademium-orientation-survey-final.vercel.app/)
 - 🎥 [Video Walkthrough - Kaltura](https://video.hanze.nl/mediashare/f4f20c2fc590902b/media/Video_Walkthrough_Ivan_Patarov_414334/0_v85jexzk)
