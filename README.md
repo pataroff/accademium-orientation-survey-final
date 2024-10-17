@@ -77,7 +77,7 @@ Alternatively, you can run the prototype locally:
 
 ## Usage
 
-The application utilizes the OpenAI API, and each API call costs approximately **~$0.01**. A typical session generally totals around **~$0.02** due to making two separate calls - one for the initial study field recommendations and another for the dashboard navigation.
+The application utilizes the OpenAI API, and each API call costs approximately **~$0.01**. 
 
 The application currently operates within a budget of approximately **$5 dollars**, so please use it sparingly.
 
