@@ -67,6 +67,8 @@ You can access the prototype directly from [this link](https://accademium-orient
 
 Alternatively, you can run the prototype locally:
 
+**IMPORTANT:** Ensure Node.js is installed. Download it here: https://nodejs.org/en
+
 1. Navigate to the `accademium-orientation-survey-final` folder.
 2. Open a terminal (e.g., Git Bash) and ensure you are inside the `accademium-orientation-survey-final` folder.
 3. Run `npm install` to install the necessary dependencies.
